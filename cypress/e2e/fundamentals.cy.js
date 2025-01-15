@@ -49,9 +49,11 @@ describe('Fundamental test', () => {
     cy.contains(/Your tests will exist in a describe block/i).should('be.visible')
     cy.get('[data-test="accordion-item-1"] div[role="button"]').click()
     cy.contains(/Your tests will exist in a describe block/i).should('not.be.visible')
-
+cy.xpath('rutaXPATH')
   })
 })
+
+
 
 /* MÉTODOS (COMANDOS) CYPRESS
 - Son asincrónicos, es decir, no se ejecutan de inmediato sino que los pone en cola y espera que los elementos del DOM estén cargados y disponibles.
